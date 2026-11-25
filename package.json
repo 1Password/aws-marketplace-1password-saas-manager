@@ -30,7 +30,7 @@
     "pipeline": "npm run ingest-match && npm run analyze && npm run enrich-actions && npm run enrich-agreements && npm run enrich-deployment && npm run enrich-shadow-it && npm run report && npm run enrich-comparisons && npm run report"
   },
   "dependencies": {
-    "@aws-sdk/client-marketplace-agreement": "^3.1157.0",
+    "@aws-sdk/client-marketplace-agreement": "^3.1175.0",
     "@aws-sdk/client-marketplace-discovery": "^3.1157.0"
   },
   "devDependencies": {
