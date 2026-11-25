@@ -142,10 +142,8 @@ covered here.
 Every command below runs from the project folder. If you see
 `npm error enoent Could not read package.json`, you're in the wrong folder (often your home folder, `~`).
 ```
-cd ~/Downloads/aws-marketplace-1password-saas-manager
+cd ~/aws-marketplace-1password-saas-manager
 ```
-(If you received a `.zip`, unzip it first; it contains this folder. Adjust the path if you put it
-somewhere else.)
 
 ### 2. Install dependencies
 ```
