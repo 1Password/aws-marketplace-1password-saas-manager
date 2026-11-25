@@ -1,8 +1,5 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="saas-manager-dark-mode.png">
-  <source media="(prefers-color-scheme: light)" srcset="saas-manager-light-mode.png">
-  <img alt="1Password SaaS Manager Logo" src="saas-manager-light-mode.png">
-</picture>
+![SaaS Manager Light Mode](saas-manager-light-mode.png#gh-light-mode-only)
+![SaaS Manager Dark Mode](saas-manager-dark-mode.png#gh-dark-mode-only)
 
 # 1Password SaaS Manager's AWS Marketplace Skill
 
@@ -591,9 +588,8 @@ Contributions are welcome: see [`CONTRIBUTING.md`](CONTRIBUTING.md) and the
 
 ---
 
-Learn more about [1Password SaaS Manager](https://1password.com/product/saas-manager)
+<p align="center">
+    <sub>Learn more about <a href="https://1password.com/product/saas-manager">1Password SaaS Manager</a><br />
+    <sub><a href="LICENSE">MIT</a> © 2026 AgileBits Inc.</sub>
+</p>
 
----
-
-## License
-[MIT](LICENSE) © 2026 AgileBits Inc.
