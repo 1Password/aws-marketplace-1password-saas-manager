@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@aws-sdk/client-marketplace-agreement": "^3.1157.0",
-    "@aws-sdk/client-marketplace-discovery": "^3.1157.0"
+    "@aws-sdk/client-marketplace-discovery": "^3.1175.0"
   },
   "devDependencies": {
     "@types/node": "^22.9.0",
