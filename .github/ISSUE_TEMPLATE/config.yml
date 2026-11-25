@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Help using the skill with your SaaS Manager account
+    url: REPLACE-WITH-SUPPORT-DOC-URL
+    about: For setup help or questions about your own data, contact 1Password support or your 1Password account team instead of opening a public issue.

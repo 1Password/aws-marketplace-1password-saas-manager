@@ -1,0 +1,10 @@
+# Code owners review and approve every change to main.
+# REPLACE @1Password/REPLACE-WITH-TEAM with the real GitHub team before publishing.
+*                 @1Password/REPLACE-WITH-TEAM
+
+# Security-sensitive files: agent permissions, outbound calls, untrusted-data handling.
+/.claude/settings.json   @1Password/REPLACE-WITH-TEAM
+/src/egress.ts           @1Password/REPLACE-WITH-TEAM
+/src/untrusted.ts        @1Password/REPLACE-WITH-TEAM
+/src/awsClients.ts       @1Password/REPLACE-WITH-TEAM
+

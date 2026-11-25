@@ -1,0 +1,28 @@
+{
+  "tools": {
+    "exclude": [
+      "web_fetch",
+      "google_web_search"
+    ],
+    "core": [
+      "read_file",
+      "read_many_files",
+      "list_directory",
+      "glob",
+      "search_file_content",
+      "write_file",
+      "replace",
+      "run_shell_command(npm install)",
+      "run_shell_command(npm run)",
+      "run_shell_command(node --version)",
+      "run_shell_command(cp .env.example .env)",
+      "run_shell_command(Copy-Item .env.example .env)",
+      "run_shell_command(test -p .env)",
+      "run_shell_command(pwd)",
+      "run_shell_command(ls)",
+      "run_shell_command(open)",
+      "run_shell_command(xdg-open)",
+      "run_shell_command(start)"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "aws-marketplace-1password-saas-manager",
+  "version": "0.7.0",
+  "private": true,
+  "description": "1Password SaaS Manager's AWS Marketplace Skill: AWS Marketplace consolidation for 1Password SaaS Manager.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "detect": "node --env-file=.env --import tsx src/index.ts",
+    "login": "node --env-file=.env --import tsx src/providers/onePasswordLogin.ts login",
+    "status": "node --env-file=.env --import tsx src/providers/onePasswordLogin.ts status",
+    "logout": "node --env-file=.env --import tsx src/providers/onePasswordLogin.ts logout",
+    "ingest-match": "node --env-file=.env --import tsx src/ingestMatch.ts",
+    "analyze": "node --env-file=.env --import tsx src/analyze.ts",
+    "enrich-actions": "node --env-file=.env --import tsx src/enrichActions.ts",
+    "enrich-agreements": "node --env-file=.env --import tsx src/enrichAgreements.ts",
+    "enrich-deployment": "node --env-file=.env --import tsx src/enrichDeployment.ts",
+    "enrich-comparisons": "node --env-file=.env --import tsx src/enrichComparisons.ts",
+    "enrich-shadow-it": "node --env-file=.env --import tsx src/enrichShadowIt.ts",
+    "report": "node --env-file=.env --import tsx src/report.ts",
+    "renew-lead": "node --env-file=.env --import tsx src/renewLead.ts",
+    "purchase-lead": "node --env-file=.env --import tsx src/purchaseLead.ts",
+    "mcp-server": "node --env-file=.env --import tsx src/mcpServer.ts",
+    "tool": "node --env-file=.env --import tsx src/cli.ts",
+    "check-mcp": "node --import tsx src/checkMcp.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc",
+    "pipeline": "npm run ingest-match && npm run analyze && npm run enrich-actions && npm run enrich-agreements && npm run enrich-deployment && npm run enrich-shadow-it && npm run report && npm run enrich-comparisons && npm run report"
+  },
+  "dependencies": {
+    "@aws-sdk/client-marketplace-agreement": "^3.1157.0",
+    "@aws-sdk/client-marketplace-discovery": "^3.1157.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}

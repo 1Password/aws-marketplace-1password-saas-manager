@@ -1,0 +1,16 @@
+{
+  "$comment": [
+    "OPTIONAL override: contract -> Main application, keyed by SaaS Manager contract id.",
+    "Normally you do not need this file. From the next SaaS Manager release the API returns each contract's",
+    "Main application (`app`) and the agent reads it directly. Use this only if a contract is attributed to the",
+    "wrong application, or has no `app` yet: copy this file to config/app-attribution.json and fill it in.",
+    "Value = { app: exact Application name as shown in SaaS Manager } - or null when the contract has no",
+    "Main application set. Contracts not listed here use the",
+    "API value, else a best-guess match. The run log shows API / FILE / by-name per contract."
+  ],
+  "byContractId": {
+    "<contract id>": {
+      "app": "<Application name>"
+    }
+  }
+}

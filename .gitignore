@@ -1,0 +1,28 @@
+node_modules/
+dist/
+.env
+*.log
+
+# Your portfolio, reports and leads (contract figures, contact details) — never commit
+out/
+# Cached Marketplace catalog responses
+.cache/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+analytics/.venv/
+
+# Bundled Discovery credentials — added at packaging time, never committed
+config/discovery-credentials.json
+
+# Built customer packages (npm run package)
+release/
+
+# Internal planning and demo material (contains internal data) — never publish
+PRD.md
+WALKTHROUGH-SCRIPT.md
+walkthrough-screens/
+mockups/
+experiments/

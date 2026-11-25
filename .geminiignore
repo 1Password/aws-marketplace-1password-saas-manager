@@ -1,0 +1,4 @@
+# Files the agent must never read: .env can hold the SaaS Manager client secret.
+# (Credentials from older versions of this bundle are listed too.) The tool reads them itself.
+.env
+config/discovery-credentials.json

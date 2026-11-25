@@ -1,0 +1,6 @@
+{
+  "_comment": "Settings fixed for everyone who receives this bundle (customers don't change these). leadRecipient: where every renewal and new-purchase lead is addressed — the report's Renew on Marketplace / Get in touch buttons, and the skill's lead tools. productName / reportName: the brand line and title of the report.",
+  "leadRecipient": "1Password-SM-AWS-Marketplace@amazon.com",
+  "productName": "1Password SaaS Manager",
+  "reportName": "AWS Marketplace Consolidation Insights"
+}

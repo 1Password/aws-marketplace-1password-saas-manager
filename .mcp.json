@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "consolidation-agent": {
+      "command": "node",
+      "args": [
+        "--env-file=.env",
+        "--import",
+        "tsx",
+        "src/mcpServer.ts"
+      ]
+    }
+  }
+}

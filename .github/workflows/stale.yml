@@ -1,0 +1,32 @@
+# Closes issues and pull requests with no activity for 90 days, with a friendly note.
+name: Stale
+
+on:
+  schedule:
+    - cron: "0 15 * * *"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v9
+        with:
+          days-before-stale: 76
+          days-before-close: 14
+          stale-issue-label: stale
+          stale-pr-label: stale
+          exempt-issue-labels: security,pinned,confirmed
+          stale-issue-message: >
+            This issue hasn't had any activity for a while, so it will be closed in two weeks.
+            If it still matters to you, add a comment and we'll keep it open. Thanks for reporting it.
+          close-issue-message: >
+            Closing this because there's been no activity for 90 days. If it's still a problem,
+            please reopen it or open a new issue with the latest details. Thank you.
+          stale-pr-message: >
+            This pull request hasn't had any activity for a while, so it will be closed in two weeks.
+            Add a comment or push a change to keep it open.
