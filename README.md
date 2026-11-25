@@ -1,3 +1,9 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="saas-manager-dark-mode.png">
+  <source media="(prefers-color-scheme: light)" srcset="saas-manager-light-mode.png">
+  <img alt="1Password SaaS Manager Logo" src="saas-manager-light-mode.png">
+</picture>
+
 # 1Password SaaS Manager's AWS Marketplace Skill
 
 Guided AWS Marketplace consolidation for an enterprise user (the *buyer*, in AWS Marketplace terms), run locally as a
@@ -582,6 +588,12 @@ tracking tags). Override with `MARKETPLACE_URL_REF` / `MARKETPLACE_URL_SRC` in `
 Contributions are welcome: see [`CONTRIBUTING.md`](CONTRIBUTING.md) and the
 [code of conduct](CODE_OF_CONDUCT.md). Please report security issues privately, as described in
 [`SECURITY.md`](SECURITY.md), not in a public issue.
+
+---
+
+Learn more about [1Password SaaS Manager](https://1password.com/product/saas-manager)
+
+---
 
 ## License
 [MIT](LICENSE) © 2026 AgileBits Inc.
